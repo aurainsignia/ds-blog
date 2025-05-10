@@ -3,12 +3,14 @@ baseURL: "https://aurainsignia.github.io/ds-blog/"
 copyright: "© Duskwave Studios"
 theme: papermod
 languageCode: en-us
+relativeURLs: true
+canonifyURLs: false
 
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   homeInfoParams:
     Title: Development Blog
-    Content: Welcome to the Dead Reckoning development blog.
+    Content: Welcome to the Dead Reckoning development blog!
 
   socialIcons:
     - name: "Discord"
