@@ -1,7 +1,7 @@
 title: Duskwave Studios
 baseURL: "https://aurainsignia.github.io/ds-blog/"
 copyright: "© Duskwave Studios"
-theme: PaperMod
+theme: papermod
 languageCode: en-us
 
 params:
