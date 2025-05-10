@@ -11,10 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          # `recursive: true` also works
           submodules: true
-          # if you need nested submodules:
-          submodules-depth: 1
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
