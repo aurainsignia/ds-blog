@@ -1,6 +1,357 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Dev Blog 0 | Duskwave Studios</title>
-<meta name=keywords content><meta name=description content="The first development blog post."><meta name=author content="Aura Insignia"><link rel=canonical href=https://aurainsignia.github.io/ds-blog/posts/development-blog-0/><link crossorigin=anonymous href=/ds-blog/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF+13Dyqob6ASlTrTye8=" rel="preload stylesheet" as=style><link rel=icon href=https://aurainsignia.github.io/ds-blog/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://aurainsignia.github.io/ds-blog/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://aurainsignia.github.io/ds-blog/favicon-32x32.png><link rel=apple-touch-icon href=https://aurainsignia.github.io/ds-blog/apple-touch-icon.png><link rel=mask-icon href=https://aurainsignia.github.io/ds-blog/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://aurainsignia.github.io/ds-blog/posts/development-blog-0/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://aurainsignia.github.io/ds-blog/posts/development-blog-0/"><meta property="og:site_name" content="Duskwave Studios"><meta property="og:title" content="Dev Blog 0"><meta property="og:description" content="The first development blog post."><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-05-05T00:04:43-04:00"><meta property="article:modified_time" content="2025-05-05T00:04:43-04:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Dev Blog 0"><meta name=twitter:description content="The first development blog post."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://aurainsignia.github.io/ds-blog/posts/"},{"@type":"ListItem","position":2,"name":"Dev Blog 0","item":"https://aurainsignia.github.io/ds-blog/posts/development-blog-0/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Dev Blog 0","name":"Dev Blog 0","description":"The first development blog post.","keywords":[],"articleBody":"Introductions Hello everyone. This is the first article of a new development blog I’m starting to publish status updates about the game I’m developing, Dead Reckoning. This first post will be longer than most and serve more as an initial informational source, covering:\nwhat Duskwave Studios is what Dead Reckoning is some information about my background currently planned features for the prototype currently planned features for the full release the development timeline various screenshots miscellaneous information In the future, you can expect posts to be shorter than this one. Additionally, I plan to eventually use this website for publishing other DR-related news like event dates and descriptions, patch notes of major updates to the gamemode, continual Q\u0026A, and more. But for now, it’ll just be a blog for anyone who is interested in following along the initial development progress of Dead Reckoning.\nIntroducing Duskwave Studios Duskwave Studios is the name of the organization and development team for my game, Dead Reckoning. It currently consists solely of myself. However, if enough interest in the game exists, I plan on opening the project up for collaboration with other developers and community members sometime after the DR prototype is finished.\nAdditionally, there’s an invite-only discord server where you can find more information about the game and socialize with community members. At the time of posting this first article, the server is open for server members to invite their friends and other players who might be interested in playing dead reckoning. The invite link can be found here for those interested in joining. Also, please be made aware that this is an 18+ server and minors are not permitted.\nA Successor to Zombie Survival: Dead Reckoning ","wordCount":"1551","inLanguage":"en","datePublished":"2025-05-05T00:04:43-04:00","dateModified":"2025-05-05T00:04:43-04:00","author":{"@type":"Person","name":"Aura Insignia"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aurainsignia.github.io/ds-blog/posts/development-blog-0/"},"publisher":{"@type":"Organization","name":"Duskwave Studios","logo":{"@type":"ImageObject","url":"https://aurainsignia.github.io/ds-blog/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://aurainsignia.github.io/ds-blog/ accesskey=h title="Duskwave Studios (Alt + H)">Duskwave Studios</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://aurainsignia.github.io/ds-blog/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://aurainsignia.github.io/ds-blog/archives/ title=Archive><span>Archive</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class="post-title entry-hint-parent">Dev Blog 0</h1><div class=post-description>The first development blog post.</div><div class=post-meta><span title='2025-05-05 00:04:43 -0400 -0400'>May 5, 2025</span>&nbsp;·&nbsp;Aura Insignia</div></header><div class=post-content><h2 id=introductions>Introductions<a hidden class=anchor aria-hidden=true href=#introductions>#</a></h2><p>Hello everyone. This is the first article of a new development blog I&rsquo;m starting to publish status updates about the game I&rsquo;m developing, Dead Reckoning. This first post will be longer than most and serve more as an initial informational source, covering:</p><ul><li>what Duskwave Studios is</li><li>what Dead Reckoning is</li><li>some information about my background</li><li>currently planned features for the prototype</li><li>currently planned features for the full release</li><li>the development timeline</li><li>various screenshots</li><li>miscellaneous information</li></ul><p>In the future, you can expect posts to be shorter than this one. Additionally, I plan to eventually use this website for publishing other DR-related news like event dates and descriptions, patch notes of major updates to the gamemode, continual Q&amp;A, and more. But for now, it&rsquo;ll just be a blog for anyone who is interested in following along the initial development progress of Dead Reckoning.</p><hr><h2 id=introducing-duskwave-studios>Introducing Duskwave Studios<a hidden class=anchor aria-hidden=true href=#introducing-duskwave-studios>#</a></h2><p><img alt=logo loading=lazy src=/images/logo.png></p><p>Duskwave Studios is the name of the organization and development team for my game, Dead Reckoning. It currently consists solely of myself. However, if enough interest in the game exists, I plan on opening the project up for collaboration with other developers and community members sometime after the DR prototype is finished.</p><p>Additionally, there&rsquo;s an invite-only discord server where you can find more information about the game and socialize with community members. At the time of posting this first article, the server is open for server members to invite their friends and other players who might be interested in playing dead reckoning. The invite link can be found <a href=https://discord.gg/MrP5nTvjC3>here</a> for those interested in joining. <em>Also, please be made aware that this is an 18+ server and minors are not permitted.</em></p><hr><h2 id=a-successor-to-zombie-survival-dead-reckoning>A Successor to Zombie Survival: Dead Reckoning<a hidden class=anchor aria-hidden=true href=#a-successor-to-zombie-survival-dead-reckoning>#</a></h2><p><code>&lt;we don't have a picture of what the game will look like yet so have a picture of a cat instead></code></p><p>Dead Reckoning is an FPS RPG based on the Zombie Survival gamemode (made by JetBoom) from Garry&rsquo;s Mod 10 using source 2 in s&amp;box and redesigned to include my own ideas. You can think of it as a spirital sucessor to that gamemode but under a different developer and a newer platform.</p><p>Like the original, it will consist of rounds between two teams fighting: Humans and Zombies. At the start of the round, you spawn on the Human team in one of many maps with resources scattered all around. You will have a small time period to gather resources and build barricades on the map to defend teleporters before many waves of zombies start spawning. Humans must purchase various weapons and upgrades with points gained from killing zombies and surviving in order to fend off the increasingly difficult waves. If you can survive until the end of the last wave, you can take the teleporter with any other survivors to escape from the zombies and win the round.</p><p>Alternatively, humans who die will succumb to the infection and become zombies. Zombies must kill all players on the human team by breaking their barricades and mauling them to death. Zombies have many class mutations to choose from that unlock as the waves progress. If the zombies manage to kill every human before the end of the last wave, then the zombie team wins.</p><hr><h2 id=the-development-timeline-and-release-schedule>The Development Timeline and Release Schedule<a hidden class=anchor aria-hidden=true href=#the-development-timeline-and-release-schedule>#</a></h2><p><code>&lt;picture of the update desc where garry admits devs have been getting fucked by s&amp;box updates></code></p><p>There will be two milestones of development: establishing a prototype and then the full release of the game. The prototype will be a skeleton version with only the essential basic systems implemented for internal testing, although I may open up a closed testing period to the community at some point for help and feedback. After the prototype has been tested and polished, I will move on to develop the full release version of the game, which will have all of the planned features fully implemented.</p><p>In a nutshell, this is going to be one of those &ldquo;it takes as long as it takes&rdquo; projects. I work fulltime and plan on spending only some weekends and some weekday evenings working on this. That, and s&amp;box seems to release many updates that require its gamemodes to be refactored (see the above image posted last June). With these things in mind, unofficially, I&rsquo;m aiming to have the prototype finished within a year (May 2026) and then the full release within one year of that (May 2027). These are not garauntees, only goals, so do not expect them to be faithfully followed. There&rsquo;s simply too many unknowns to give a truly accurate estimate. Just keep in mind, one way or another we&rsquo;ll get there. And then we&rsquo;ll have a fun, non-shit game we can play together.</p><hr><h2 id=planned-features>Planned Features<a hidden class=anchor aria-hidden=true href=#planned-features>#</a></h2><p><code>&lt;picture of the youtrack agile board></code></p><p>Dead Reckoning is going to have all of the core features of the original game with additional features and systems added by myself, and some more mundane mechanics reworked. While I don&rsquo;t have any concept art available yet since it is still very early in development, I will be sharing early screenshots of development in following blog posts in the coming months with more details on what each of these features do. Many will be very similar or the same as their equivalent systems in Zombie Survival.</p><h3 id=prototypes-features>Prototype&rsquo;s Features<a hidden class=anchor aria-hidden=true href=#prototypes-features>#</a></h3><ul><li>Basic Game Loop<ul><li>Wave-based Rounds</li><li>Map Selection System</li><li>End of round mentions</li></ul></li><li>Ingame Wikipedia</li><li>Barricade System</li><li>Teleporter System</li><li>Player Chat, Sound Emotes, and Emojis</li><li>Human (Level) Skill Tree</li><li>Human Round Loadouts<ul><li>Perks, Trade-offs, and Sacrifices System</li><li>Starting Items</li></ul></li><li>Tier-based Shop System (Humans)<ul><li>Weapons<ul><li>Melee, Shotguns, SMGs, ARs, Snipers, Explosives, Projectiles</li></ul></li><li>Tools<ul><li>Hammers, Medical Kits, Repair Fields, Shields, Turrets</li></ul></li><li>Throwables<ul><li>Grenades, Throwing Knives, Concussion Grenades</li></ul></li></ul></li><li>Zombie Bots (AI)</li><li>Wave-based Zombie Classes</li><li>Zombie Upgrades Shop</li><li>Baseline Cosmetics, Currency System (Hats only)</li><li>Knockback System</li><li>Status Effects</li><li>Scoreboard</li><li>Player Profiles<ul><li>Sprays</li><li>Game Settings</li><li>Tracked Player Statistics</li></ul></li><li>Award System</li><li>10 Maps</li></ul><h3 id=full-releases-features>Full Release&rsquo;s Features<a hidden class=anchor aria-hidden=true href=#full-releases-features>#</a></h3><ul><li>Optional Newbie Tutorial</li><li>Dynamic Difficulty System</li><li>Dance Emotes</li><li>Bonus & Super Bonus System</li><li>Minigame System<ul><li>Fishing</li><li>Mining</li></ul></li><li>Secret Shop</li><li>Optional Wave Intermission Objectives</li><li>Censorship Policy Settings<ul><li>NSFW</li><li>SFW</li><li>Streamer Mode</li></ul></li><li>Player Leaderboard</li><li>Announcer Voices</li><li>Cooldown Area</li><li>Other Experimental Ideas</li></ul><p>Besides these features, the gamemode itself will need to be created. Many less-interesting things not mentioned here will also be included like the player HUD, inventory system, and other fundamental modules of the game. Additionally, this a starting point. More features will be planned and added along the way as well.</p><p><em>Do you have questions about any of these? Feel free to ask them in our discord! I&rsquo;ll be curating an FAQ that will be in the next article.</em></p><hr><h2 id=about-me>About Me<a hidden class=anchor aria-hidden=true href=#about-me>#</a></h2><p><code>&lt;Zombie Survival yt vid here></code></p><p>For those who don&rsquo;t know me, I am a long time player and fan of the original game, Zombie Survival created by Jetboom way back in the mid 2000&rsquo;s. I work fulltime as a software developer (not in the gaming industry) and have a degree in computer science. I have over 10k hours spent playing ZS and spend most of my free time gaming. This project is going to be my first time delving into game development and I plan on taking my time and doing it right.</p><h4 id=development-motivations>Development Motivations<a hidden class=anchor aria-hidden=true href=#development-motivations>#</a></h4><p>As for why I&rsquo;m making it, there are several reasons.</p><ol><li>The modern gaming industry is becoming shit and prioritizing capitalization over quality.</li><li>The gameplay of classic Zombie Survival is becoming stale and oudated compared to modern games.</li><li>I want a new game to play that&rsquo;s just as fun or better than ZS.</li><li>I want the game&rsquo;s community to not be burdened by poor management.</li></ol><p>Developing the game myself fixes all of these issues and also satisfies a long-term goal I have had since being a teenager. It just makes sense.</p><hr><h2 id=miscellaneous-information>Miscellaneous Information<a hidden class=anchor aria-hidden=true href=#miscellaneous-information>#</a></h2><p>Below are some other pieces of information that I couldn&rsquo;t find a good fit for in the other sections.</p><h4 id=licensing-restrictons>Licensing Restrictons<a hidden class=anchor aria-hidden=true href=#licensing-restrictons>#</a></h4><p>Unlike the original, Dead Reckoning will not be able to use the assets from various source games, including the main one, Half-Life 2. The original game had Half-Life 2 assets available for developers to use due to the unique licensing contract Valve has with Garry for Garry&rsquo;s Mod. However, S&amp;box lacks that contract, so Dead Reckoning will need to have its assets sourced from other avenues. Whatever assets I end up using, I will try my best to keep them as similar as possible to the original ones used in Zombie Survival while still following the law.</p><h4 id=what-is-a-duskwave>What is a &ldquo;Duskwave&rdquo;?<a hidden class=anchor aria-hidden=true href=#what-is-a-duskwave>#</a></h4><p>In short, a single wave of &ldquo;dusk&rdquo; can be observed carpetting the planet during solar eclipses, which are thought to symbolize major changes historically. Basically, the idea is that Duskwave Studios is a symbol of change, with its games contrasting against the many mediocre publishings of the modern gaming industry.</p><hr><h2 id=final-notes>Final Notes<a hidden class=anchor aria-hidden=true href=#final-notes>#</a></h2><p>I&rsquo;m looking forward to watching the community grow as development inches towards the first milestone. I hope I can build a game that we can all enjoy and that provides a modern, high-quality gaming experience. Otherwise, that concludes this first post. I apologize if it&rsquo;s a bit disorganized, wordy, etc. I&rsquo;m hoping I get better at writing these as I make more of them.</p><p>I&rsquo;ll be seeing you guys in the discord and on zombie survival <code>&lt;picture of solid snake soluting></code>. See you next post!</p><p>Additional website links</p><ul><li>s&amp;box news <a href=https://sbox.game/news/>https://sbox.game/news/</a></li><li>midnight zombie survival <a href=https://midnight.cat/>https://midnight.cat/</a></li></ul></div><footer class=post-footer><ul class=post-tags></ul></footer></article></main><footer class=footer><span>© Duskwave Studios</span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/ds-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ds-blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Dev Blog 0 | Duskwave Studios</title>
+<meta name="keywords" content="">
+<meta name="description" content="The first development blog post.">
+<meta name="author" content="Aura Insignia">
+<link rel="canonical" href="http://localhost:1313/ds-blog/posts/development-blog-0/">
+<link crossorigin="anonymous" href="/ds-blog/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/ds-blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/ds-blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/ds-blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/ds-blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/ds-blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/ds-blog/posts/development-blog-0/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/ds-blog/" accesskey="h" title="Duskwave Studios (Alt + H)">Duskwave Studios</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/ds-blog/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/ds-blog/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Dev Blog 0
+    </h1>
+    <div class="post-description">
+      The first development blog post.
+    </div>
+    <div class="post-meta"><span title='2025-05-05 00:04:43 -0400 EDT'>May 5, 2025</span>&nbsp;·&nbsp;Aura Insignia
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="introductions">Introductions<a hidden class="anchor" aria-hidden="true" href="#introductions">#</a></h2>
+<p>Hello everyone. This is the first article of a new development blog I&rsquo;m starting to publish status updates about the game I&rsquo;m developing, Dead Reckoning. This first post will be longer than most and serve more as an initial informational source, covering:</p>
+<ul>
+<li>what Duskwave Studios is</li>
+<li>what Dead Reckoning is</li>
+<li>some information about my background</li>
+<li>currently planned features for the prototype</li>
+<li>currently planned features for the full release</li>
+<li>the development timeline</li>
+<li>various screenshots</li>
+<li>miscellaneous information</li>
+</ul>
+<p>In the future, you can expect posts to be shorter than this one. Additionally, I plan to eventually use this website for publishing other DR-related news like event dates and descriptions, patch notes of major updates to the gamemode, continual Q&amp;A, and more. But for now, it&rsquo;ll just be a blog for anyone who is interested in following along the initial development progress of Dead Reckoning.</p>
+<hr>
+<h2 id="introducing-duskwave-studios">Introducing Duskwave Studios<a hidden class="anchor" aria-hidden="true" href="#introducing-duskwave-studios">#</a></h2>
+<p><img alt="logo" loading="lazy" src="/images/logo.png"></p>
+<p>Duskwave Studios is the name of the organization and development team for my game, Dead Reckoning. It currently consists solely of myself. However, if enough interest in the game exists, I plan on opening the project up for collaboration with other developers and community members sometime after the DR prototype is finished.</p>
+<p>Additionally, there&rsquo;s an invite-only discord server where you can find more information about the game and socialize with community members. At the time of posting this first article, the server is open for server members to invite their friends and other players who might be interested in playing dead reckoning. The invite link can be found <a href="https://discord.gg/MrP5nTvjC3">here</a> for those interested in joining. <em>Also, please be made aware that this is an 18+ server and minors are not permitted.</em></p>
+<hr>
+<h2 id="a-successor-to-zombie-survival-dead-reckoning">A Successor to Zombie Survival: Dead Reckoning<a hidden class="anchor" aria-hidden="true" href="#a-successor-to-zombie-survival-dead-reckoning">#</a></h2>
+<p><code>&lt;we don't have a picture of what the game will look like yet so have a picture of a cat instead&gt;</code></p>
+<p>Dead Reckoning is an FPS RPG based on the Zombie Survival gamemode (made by JetBoom) from Garry&rsquo;s Mod 10 using source 2 in s&amp;box and redesigned to include my own ideas. You can think of it as a spirital sucessor to that gamemode but under a different developer and a newer platform.</p>
+<p>Like the original, it will consist of rounds between two teams fighting: Humans and Zombies. At the start of the round, you spawn on the Human team in one of many maps with resources scattered all around. You will have a small time period to gather resources and build barricades on the map to defend teleporters before many waves of zombies start spawning. Humans must purchase various weapons and upgrades with points gained from killing zombies and surviving in order to fend off the increasingly difficult waves. If you can survive until the end of the last wave, you can take the teleporter with any other survivors to escape from the zombies and win the round.</p>
+<p>Alternatively, humans who die will succumb to the infection and become zombies. Zombies must kill all players on the human team by breaking their barricades and mauling them to death. Zombies have many class mutations to choose from that unlock as the waves progress. If the zombies manage to kill every human before the end of the last wave, then the zombie team wins.</p>
+<hr>
+<h2 id="the-development-timeline-and-release-schedule">The Development Timeline and Release Schedule<a hidden class="anchor" aria-hidden="true" href="#the-development-timeline-and-release-schedule">#</a></h2>
+<p><code>&lt;picture of the update desc where garry admits devs have been getting fucked by s&amp;box updates&gt;</code></p>
+<p>There will be two milestones of development: establishing a prototype and then the full release of the game. The prototype will be a skeleton version with only the essential basic systems implemented for internal testing, although I may open up a closed testing period to the community at some point for help and feedback. After the prototype has been tested and polished, I will move on to develop the full release version of the game, which will have all of the planned features fully implemented.</p>
+<p>In a nutshell, this is going to be one of those &ldquo;it takes as long as it takes&rdquo; projects. I work fulltime and plan on spending only some weekends and some weekday evenings working on this. That, and s&amp;box seems to release many updates that require its gamemodes to be refactored (see the above image posted last June). With these things in mind, unofficially, I&rsquo;m aiming to have the prototype finished within a year (May 2026) and then the full release within one year of that (May 2027). These are not garauntees, only goals, so do not expect them to be faithfully followed. There&rsquo;s simply too many unknowns to give a truly accurate estimate. Just keep in mind, one way or another we&rsquo;ll get there. And then we&rsquo;ll have a fun, non-shit game we can play together.</p>
+<hr>
+<h2 id="planned-features">Planned Features<a hidden class="anchor" aria-hidden="true" href="#planned-features">#</a></h2>
+<p><code>&lt;picture of the youtrack agile board&gt;</code></p>
+<p>Dead Reckoning is going to have all of the core features of the original game with additional features and systems added by myself, and some more mundane mechanics reworked. While I don&rsquo;t have any concept art available yet since it is still very early in development, I will be sharing early screenshots of development in following blog posts in the coming months with more details on what each of these features do. Many will be very similar or the same as their equivalent systems in Zombie Survival.</p>
+<h3 id="prototypes-features">Prototype&rsquo;s Features<a hidden class="anchor" aria-hidden="true" href="#prototypes-features">#</a></h3>
+<ul>
+<li>Basic Game Loop
+<ul>
+<li>Wave-based Rounds</li>
+<li>Map Selection System</li>
+<li>End of round mentions</li>
+</ul>
+</li>
+<li>Ingame Wikipedia</li>
+<li>Barricade System</li>
+<li>Teleporter System</li>
+<li>Player Chat, Sound Emotes, and Emojis</li>
+<li>Human (Level) Skill Tree</li>
+<li>Human Round Loadouts
+<ul>
+<li>Perks, Trade-offs, and Sacrifices System</li>
+<li>Starting Items</li>
+</ul>
+</li>
+<li>Tier-based Shop System (Humans)
+<ul>
+<li>Weapons
+<ul>
+<li>Melee, Shotguns, SMGs, ARs, Snipers, Explosives, Projectiles</li>
+</ul>
+</li>
+<li>Tools
+<ul>
+<li>Hammers, Medical Kits, Repair Fields, Shields, Turrets</li>
+</ul>
+</li>
+<li>Throwables
+<ul>
+<li>Grenades, Throwing Knives, Concussion Grenades</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Zombie Bots (AI)</li>
+<li>Wave-based Zombie Classes</li>
+<li>Zombie Upgrades Shop</li>
+<li>Baseline Cosmetics, Currency System (Hats only)</li>
+<li>Knockback System</li>
+<li>Status Effects</li>
+<li>Scoreboard</li>
+<li>Player Profiles
+<ul>
+<li>Sprays</li>
+<li>Game Settings</li>
+<li>Tracked Player Statistics</li>
+</ul>
+</li>
+<li>Award System</li>
+<li>10 Maps</li>
+</ul>
+<h3 id="full-releases-features">Full Release&rsquo;s Features<a hidden class="anchor" aria-hidden="true" href="#full-releases-features">#</a></h3>
+<ul>
+<li>Optional Newbie Tutorial</li>
+<li>Dynamic Difficulty System</li>
+<li>Dance Emotes</li>
+<li>Bonus &amp; Super Bonus System</li>
+<li>Minigame System
+<ul>
+<li>Fishing</li>
+<li>Mining</li>
+</ul>
+</li>
+<li>Secret Shop</li>
+<li>Optional Wave Intermission Objectives</li>
+<li>Censorship Policy Settings
+<ul>
+<li>NSFW</li>
+<li>SFW</li>
+<li>Streamer Mode</li>
+</ul>
+</li>
+<li>Player Leaderboard</li>
+<li>Announcer Voices</li>
+<li>Cooldown Area</li>
+<li>Other Experimental Ideas</li>
+</ul>
+<p>Besides these features, the gamemode itself will need to be created. Many less-interesting things not mentioned here will also be included like the player HUD, inventory system, and other fundamental modules of the game. Additionally, this a starting point. More features will be planned and added along the way as well.</p>
+<p><em>Do you have questions about any of these? Feel free to ask them in our discord! I&rsquo;ll be curating an FAQ that will be in the next article.</em></p>
+<hr>
+<h2 id="about-me">About Me<a hidden class="anchor" aria-hidden="true" href="#about-me">#</a></h2>
+<p><code>&lt;Zombie Survival yt vid here&gt;</code></p>
+<p>For those who don&rsquo;t know me, I am a long time player and fan of the original game, Zombie Survival created by Jetboom way back in the mid 2000&rsquo;s. I work fulltime as a software developer (not in the gaming industry) and have a degree in computer science. I have over 10k hours spent playing ZS and spend most of my free time gaming. This project is going to be my first time delving into game development and I plan on taking my time and doing it right.</p>
+<h4 id="development-motivations">Development Motivations<a hidden class="anchor" aria-hidden="true" href="#development-motivations">#</a></h4>
+<p>As for why I&rsquo;m making it, there are several reasons.</p>
+<ol>
+<li>The modern gaming industry is becoming shit and prioritizing capitalization over quality.</li>
+<li>The gameplay of classic Zombie Survival is becoming stale and oudated compared to modern games.</li>
+<li>I want a new game to play that&rsquo;s just as fun or better than ZS.</li>
+<li>I want the game&rsquo;s community to not be burdened by poor management.</li>
+</ol>
+<p>Developing the game myself fixes all of these issues and also satisfies a long-term goal I have had since being a teenager. It just makes sense.</p>
+<hr>
+<h2 id="miscellaneous-information">Miscellaneous Information<a hidden class="anchor" aria-hidden="true" href="#miscellaneous-information">#</a></h2>
+<p>Below are some other pieces of information that I couldn&rsquo;t find a good fit for in the other sections.</p>
+<h4 id="licensing-restrictons">Licensing Restrictons<a hidden class="anchor" aria-hidden="true" href="#licensing-restrictons">#</a></h4>
+<p>Unlike the original, Dead Reckoning will not be able to use the assets from various source games, including the main one, Half-Life 2. The original game had Half-Life 2 assets available for developers to use due to the unique licensing contract Valve has with Garry for Garry&rsquo;s Mod. However, S&amp;box lacks that contract, so Dead Reckoning will need to have its assets sourced from other avenues. Whatever assets I end up using, I will try my best to keep them as similar as possible to the original ones used in Zombie Survival while still following the law.</p>
+<h4 id="what-is-a-duskwave">What is a &ldquo;Duskwave&rdquo;?<a hidden class="anchor" aria-hidden="true" href="#what-is-a-duskwave">#</a></h4>
+<p>In short, a single wave of &ldquo;dusk&rdquo; can be observed carpetting the planet during solar eclipses, which are thought to symbolize major changes historically. Basically, the idea is that Duskwave Studios is a symbol of change, with its games contrasting against the many mediocre publishings of the modern gaming industry.</p>
+<hr>
+<h2 id="final-notes">Final Notes<a hidden class="anchor" aria-hidden="true" href="#final-notes">#</a></h2>
+<p>I&rsquo;m looking forward to watching the community grow as development inches towards the first milestone. I hope I can build a game that we can all enjoy and that provides a modern, high-quality gaming experience. Otherwise, that concludes this first post. I apologize if it&rsquo;s a bit disorganized, wordy, etc. I&rsquo;m hoping I get better at writing these as I make more of them.</p>
+<p>I&rsquo;ll be seeing you guys in the discord and on zombie survival <code>&lt;picture of solid snake soluting&gt;</code>. See you next post!</p>
+<p>Additional website links</p>
+<ul>
+<li>s&amp;box news <a href="https://sbox.game/news/">https://sbox.game/news/</a></li>
+<li>midnight zombie survival <a href="https://midnight.cat/">https://midnight.cat/</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>© Duskwave Studios</span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
