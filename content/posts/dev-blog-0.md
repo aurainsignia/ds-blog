@@ -2,7 +2,7 @@
 title: Dev Blog No. 0
 date: "2025-05-10T18:46:31+00:00"
 author: Aura Insignia
-description: The first development blog post.
+summary: "The first development blog post; an introduction to Dead Reckoning's development!"
 draft: false
 ---
 
