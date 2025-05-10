@@ -11,7 +11,11 @@
     <loc>http://localhost:1313/ds-blog/posts/</loc>
     <lastmod>2025-05-05T00:04:43-04:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/ds-blog/archives/</loc>
+  </url><url>
     <loc>http://localhost:1313/ds-blog/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ds-blog/search/</loc>
   </url><url>
     <loc>http://localhost:1313/ds-blog/tags/</loc>
   </url>
