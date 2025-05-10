@@ -1,14 +1,14 @@
-theme: PaperMod
-baseURL: "https://aurainsignia.github.io/ds-blog/"
-languageCode: en-us
 title: Duskwave Studios
+baseURL: "https://aurainsignia.github.io/ds-blog/"
+copyright: "© Duskwave Studios"
+theme: PaperMod
+languageCode: en-us
 
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme
-
   homeInfoParams:
-    Title: Dead Reckoning Development Blog
-    Content: Can be Info, links, about...
+    Title: Development Blog
+    Content: Welcome to the Dead Reckoning development blog.
 
   socialIcons:
     - name: "Discord"
@@ -25,6 +25,17 @@ params:
     minMatchCharLength: 0
     # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: [ "title", "permalink", "summary", "content" ]
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 20
 
 outputs:
   home:

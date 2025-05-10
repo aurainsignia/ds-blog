@@ -1,7 +1,9 @@
 ---
-date: "2025-05-05T00:04:43-04:00"
-draft: false
 title: Dev Blog 0
+date: "2025-05-05T00:04:43-04:00"
+author: Aura Insignia
+description: The first development blog post.
+draft: false
 ---
 
 ## Introductions
@@ -20,9 +22,10 @@ Hello everyone. This is the first article of a new development blog I'm starting
 In the future, you can expect posts to be shorter than this one. Additionally, I plan to eventually use this website for publishing other DR-related news like event dates and descriptions, patch notes of major updates to the gamemode, continual Q&A, and more. But for now, it'll just be a blog for anyone who is interested in following along the initial development progress of Dead Reckoning.
 
 ---
+
 ## Introducing Duskwave Studios
 
-`<picture of logo here>`
+![logo](/images/logo.png)
 
 Duskwave Studios is the name of the organization and development team for my game, Dead Reckoning. It currently consists solely of myself. However, if enough interest in the game exists, I plan on opening the project up for collaboration with other developers and community members sometime after the DR prototype is finished.
 
@@ -130,7 +133,7 @@ Developing the game myself fixes all of these issues and also satisfies a long-t
 ## Miscellaneous Information
 Below are some other pieces of information that I couldn't find a good fit for in the other sections.
 #### Licensing Restrictons
-Unlike the original, Dead Reckoning will not be able to use the assets from various source games, including the main one, Half-Life 2. The original game had Half-Life 2 assets available for developers to use due to the unique licensing contract Valve has with Garry for Garry's Mod. However, S&box lacks that contract, so Dead Reckoning will need to have its assets sourced from other avenues. Whatever assets we end up using, I will try my best to keep them as similar as possible to the original ones used in Zombie Survival while still following the law.
+Unlike the original, Dead Reckoning will not be able to use the assets from various source games, including the main one, Half-Life 2. The original game had Half-Life 2 assets available for developers to use due to the unique licensing contract Valve has with Garry for Garry's Mod. However, S&box lacks that contract, so Dead Reckoning will need to have its assets sourced from other avenues. Whatever assets I end up using, I will try my best to keep them as similar as possible to the original ones used in Zombie Survival while still following the law.
 #### What is a "Duskwave"?
 In short, a single wave of "dusk" can be observed carpetting the planet during solar eclipses, which are thought to symbolize major changes historically. Basically, the idea is that Duskwave Studios is a symbol of change, with its games contrasting against the many mediocre publishings of the modern gaming industry.
 
