@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Duskwave Studios</title><link>https://aurainsignia.github.io/ds-blog/posts/</link><description>Recent content in Posts on Duskwave Studios</description><generator>Hugo</generator><language>en-us</language><copyright>© Duskwave Studios</copyright><lastBuildDate>Mon, 05 May 2025 00:04:43 -0400</lastBuildDate><atom:link href="https://aurainsignia.github.io/ds-blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Dev Blog 0</title><link>https://aurainsignia.github.io/ds-blog/posts/development-blog-0/</link><pubDate>Mon, 05 May 2025 00:04:43 -0400</pubDate><guid>https://aurainsignia.github.io/ds-blog/posts/development-blog-0/</guid><description>&lt;h2 id="introductions">Introductions&lt;/h2>
-&lt;p>Hello everyone. This is the first article of a new development blog I&amp;rsquo;m starting to publish status updates about the game I&amp;rsquo;m developing, Dead Reckoning. This first post will be longer than most and serve more as an initial informational source, covering:&lt;/p>
-&lt;ul>
-&lt;li>what Duskwave Studios is&lt;/li>
-&lt;li>what Dead Reckoning is&lt;/li>
-&lt;li>some information about my background&lt;/li>
-&lt;li>currently planned features for the prototype&lt;/li>
-&lt;li>currently planned features for the full release&lt;/li>
-&lt;li>the development timeline&lt;/li>
-&lt;li>various screenshots&lt;/li>
-&lt;li>miscellaneous information&lt;/li>
-&lt;/ul>
-&lt;p>In the future, you can expect posts to be shorter than this one. Additionally, I plan to eventually use this website for publishing other DR-related news like event dates and descriptions, patch notes of major updates to the gamemode, continual Q&amp;amp;A, and more. But for now, it&amp;rsquo;ll just be a blog for anyone who is interested in following along the initial development progress of Dead Reckoning.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Duskwave Studios</title><link>https://aurainsignia.github.io/ds-blog/posts/</link><description>Recent content in Posts on Duskwave Studios</description><generator>Hugo -- 0.147.2</generator><language>en-us</language><copyright>Duskwave Studios</copyright><lastBuildDate>Mon, 05 May 2025 00:04:43 -0400</lastBuildDate><atom:link href="https://aurainsignia.github.io/ds-blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Dev Blog 0</title><link>https://aurainsignia.github.io/ds-blog/posts/development-blog-0/</link><pubDate>Mon, 05 May 2025 00:04:43 -0400</pubDate><guid>https://aurainsignia.github.io/ds-blog/posts/development-blog-0/</guid><description>The first development blog post.</description></item></channel></rss>
