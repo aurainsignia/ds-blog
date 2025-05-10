@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://example.org/posts/development-blog-0/</loc><lastmod>2025-05-05T00:04:43-04:00</lastmod></url><url><loc>https://example.org/</loc><lastmod>2025-05-05T00:04:43-04:00</lastmod></url><url><loc>https://example.org/posts/</loc><lastmod>2025-05-05T00:04:43-04:00</lastmod></url><url><loc>https://example.org/categories/</loc></url><url><loc>https://example.org/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/ds-blog/posts/development-blog-0/</loc>
+    <lastmod>2025-05-05T00:04:43-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ds-blog/</loc>
+    <lastmod>2025-05-05T00:04:43-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ds-blog/posts/</loc>
+    <lastmod>2025-05-05T00:04:43-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ds-blog/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ds-blog/tags/</loc>
+  </url>
+</urlset>

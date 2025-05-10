@@ -1,1 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on My New Hugo Site</title><link>https://example.org/posts/</link><description>Recent content in Posts on My New Hugo Site</description><generator>Hugo -- 0.147.1</generator><language>en-us</language><lastBuildDate>Mon, 05 May 2025 00:04:43 -0400</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Development Blog 0</title><link>https://example.org/posts/development-blog-0/</link><pubDate>Mon, 05 May 2025 00:04:43 -0400</pubDate><guid>https://example.org/posts/development-blog-0/</guid><description>&lt;p>post 0&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Duskwave Studios</title>
+    <link>http://localhost:1313/ds-blog/posts/</link>
+    <description>Recent content in Posts on Duskwave Studios</description>
+    <generator>Hugo -- 0.147.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 May 2025 00:04:43 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/ds-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dev Blog 0</title>
+      <link>http://localhost:1313/ds-blog/posts/development-blog-0/</link>
+      <pubDate>Mon, 05 May 2025 00:04:43 -0400</pubDate>
+      <guid>http://localhost:1313/ds-blog/posts/development-blog-0/</guid>
+      <description>&lt;h2 id=&#34;introductions&#34;&gt;Introductions&lt;/h2&gt;
+&lt;p&gt;Hello everyone. This is the first article of a new development blog I&amp;rsquo;m starting to publish status updates about the game I&amp;rsquo;m developing, Dead Reckoning. This first post will be longer than most and serve more as an initial informational source, covering:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;what Duskwave Studios is&lt;/li&gt;
+&lt;li&gt;what Dead Reckoning is&lt;/li&gt;
+&lt;li&gt;some information about my background&lt;/li&gt;
+&lt;li&gt;currently planned features for the prototype&lt;/li&gt;
+&lt;li&gt;currently planned features for the full release&lt;/li&gt;
+&lt;li&gt;the development timeline&lt;/li&gt;
+&lt;li&gt;various screenshots&lt;/li&gt;
+&lt;li&gt;miscellaneous information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the future, you can expect posts to be shorter than this one. Additionally, I plan to eventually use this website for publishing other DR-related news like event dates and descriptions, patch notes of major updates to the gamemode, continual Q&amp;amp;A, and more. But for now, it&amp;rsquo;ll just be a blog for anyone who is interested in following along the initial development progress of Dead Reckoning.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
