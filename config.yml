@@ -4,7 +4,7 @@ copyright: "© Duskwave Studios"
 theme: papermod
 languageCode: en-us
 #relativeURLs: true
-#canonifyURLs: false
+canonifyURLs: true
 
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme
