@@ -9,7 +9,7 @@ canonifyURLs: true
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   homeInfoParams:
-    Title: Development Blog
+    Title: The Dead Reckoning Development Blog
     Content: Welcome to the Dead Reckoning development blog!
 
   socialIcons:
