@@ -1,0 +1,9 @@
+{{/* layouts/partials/post_meta.html */}}
+<p class="meta">
+  <span class="meta-left">
+    {{ .Date.Format "Jan 2, 2006" }} · {{ with .Params.author }}{{ . }}{{ end }}
+  </span>
+  <span class="meta-right">
+    {{ partial "ago.html" .Date }}
+  </span>
+</p>

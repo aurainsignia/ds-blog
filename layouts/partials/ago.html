@@ -1,0 +1,25 @@
+{{/* layouts/partials/ago.html */}}
+{{- /* Given a time.Time as “.”, print a “5m ago” style string */ -}}
+
+{{- $then   := .               -}}
+{{- $now    := now             -}}
+{{- $secs   := sub $now.Unix $then.Unix   -}}
+{{- $mins   := div $secs 60            -}}
+{{- $hours  := div $secs 3600          -}}
+{{- $days   := div $secs 86400         -}}
+{{- $months := div $secs 2592000       -}}  {{/* 30*24*3600 */}}
+{{- $years  := div $secs 31536000      -}}  {{/* 365*24*3600 */}}
+
+{{- if lt $secs 60 -}}
+  {{ printf "%ds ago" $secs }}
+{{- else if lt $mins 60 -}}
+  {{ printf "%dm ago" $mins }}
+{{- else if lt $hours 24 -}}
+  {{ printf "%dh ago" $hours }}
+{{- else if lt $days 30 -}}
+  {{ printf "%dd ago" $days }}
+{{- else if lt $months 12 -}}
+  {{ printf "%dmo ago" $months }}
+{{- else -}}
+  {{ printf "%dy ago" $years }}
+{{- end -}}

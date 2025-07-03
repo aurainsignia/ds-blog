@@ -11,6 +11,10 @@ params:
   homeInfoParams:
     Title: The Dead Reckoning Development Blog
     Content: Welcome to the Dead Reckoning development blog!
+  mainSections:
+    - articles
+  customCSS:
+    - css/custom.css
 
   socialIcons:
     - name: "Discord"
@@ -44,3 +48,12 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        inline: true
+    renderer:
+      unsafe: true

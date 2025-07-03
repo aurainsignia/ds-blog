@@ -1,8 +1,8 @@
 ---
-title: Dev Blog No. 0
+title: An Introduction To Dead Reckoning
 date: "2025-05-10T18:46:31+00:00"
 author: Aura Insignia
-summary: "The first development blog post; an introduction to Dead Reckoning's development!"
+summary: "Welcome to Duskwave Studios!"
 draft: false
 ---
 

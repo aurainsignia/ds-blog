@@ -7,14 +7,6 @@
     <generator>Hugo -- 0.147.1</generator>
     <language>en-us</language>
     <copyright>Duskwave Studios</copyright>
-    <lastBuildDate>Sat, 10 May 2025 18:46:31 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ds-blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Dev Blog No. 0</title>
-      <link>http://localhost:1313/ds-blog/posts/dev-blog-0/</link>
-      <pubDate>Sat, 10 May 2025 18:46:31 +0000</pubDate>
-      <guid>http://localhost:1313/ds-blog/posts/dev-blog-0/</guid>
-      <description>The first development blog post; an introduction to Dead Reckoning&amp;rsquo;s development!</description>
-    </item>
   </channel>
 </rss>
