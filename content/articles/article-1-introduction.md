@@ -52,7 +52,7 @@ Dead Reckoning will be everything Zombie Survival has been and more. I plan on r
 ![garrymoment](/images/garrymoment.png)
 {{< /simplecenter >}}
 
-There will be two milestones of development: establishing a prototype and then the full release of the game. The prototype will be a skeleton version with only the essential basic systems implemented for internal testing, although I may open up several playtests to the community at some point for help and feedback. After the prototype has been tested and polished, I will move on to develop the full release version of the game, which will have all of the planned features fully implemented.
+There will be two milestones of development: establishing a **prototype** and then developing the **full release** of the game. The prototype will be a skeleton version with only the essential basic systems implemented for internal testing, although I may open up several playtests to the community at some point for help and feedback. After the prototype has been tested and polished, I will move on to develop the full release version of the game, which will have all of the planned features fully implemented.
 
 As far as the development timeline goes, this is going to be one of those "it takes as long as it takes" projects. I work fulltime and plan on spending only some weekends and some weekday evenings working on this. That, and s&box seems to release many updates that require its gamemodes to be refactored (see the above image). For those reasons, I can't estimate or give an accurate official release date at this time.
 
