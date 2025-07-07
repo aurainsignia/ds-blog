@@ -59,6 +59,8 @@ Scene
 ![Missing ](/images/article2/debugging%20singleton%20null%20ptr/image2.png)
 {{< /center >}}
 
+That is about it as far as current progress goes. Once I finish implementing the supporting HUD systems I will move onto designing the HUD itself.
+
 ### Development Reflections So Far
 
 I've had about two months of development time now and I still haven't really covered much ground yet. The main reason is because I've spent a large portion of that time learning about the new tools and technologies that I'm working with. Hopefully as I become more familiar with them, my productivity should also increase correspondingly.
