@@ -5,21 +5,20 @@ author: Aura Insignia
 summary: "Welcome to Duskwave Studios!"
 draft: false
 ---
+## Table of Contents
+- [Introductions](#introductions)
+- [Introducing Duskwave Studios](#introducing-duskwave-studios)
+- [Dead Reckoning: A Successor to Zombie Survival](#dead-reckoning-a-successor-to-zombie-survival)
+- [The Development Timeline & Release Schedule](#the-development-timeline--release-schedule)
+- [Planned Features](#planned-features)
+- [My Background](#about-the-developer)
+- [Miscellaneous Information](#miscellaneous-information)
 
 ## Introductions
 
-Hello everyone. This is the first article of a new development blog I'm starting to publish news updates about a game I'm developing, Dead Reckoning. This first post will be longer than most and serve more as an initial informational source. We will cover the following subjects:
+Hello everyone. This is the first article of a new development blog I'm starting to publish news updates about a game I'm developing, Dead Reckoning. This first post will be longer than most and serve more as an initial informational source.
 
-- Duskwave Studios
-- Dead Reckoning 
-- My Background
-- Planned Prototype Features
-- Planned Full Release
-- Development Timeline
-- Various Screenshots
-- Miscellaneous Information
-
-In the future, you can expect posts to be shorter than this one. Additionally, I may turn this website into a central hub for publishing other Dead Reckoning data, like event dates and descriptions, patch notes of major updates to the gamemode, continual Q&A, and more. For now, it'll just be a blog for anyone who is interested in following along the development of Dead Reckoning.
+In the future, you can expect posts to be shorter than this one. Additionally, I may turn this website into a central hub for publishing other Dead Reckoning information, like event dates and descriptions, patch notes of major updates to the gamemode, continual Q&A, and more. For now, it'll just be a blog for anyone who is interested in following along the development of Dead Reckoning.
 
 ## Introducing Duskwave Studios
 
@@ -46,7 +45,7 @@ The zombie survival servers retain one of the highest average server player popu
 
 Dead Reckoning will be everything Zombie Survival has been and more. I plan on recreating many of the existing systems that are in current iterations of the game and expanding upon them or improving them where I think it's needed. Since we're no longer tethered to the old engine, I'm really free to experiment and use better ideas for creating the gameplay elements that the original game had.
 
-## The Development Timeline and Release Schedule
+## The Development Timeline & Release Schedule
 
 {{< simplecenter caption="The woes of early s&box development." >}}
 ![garrymoment](/images/garrymoment.png)
@@ -152,7 +151,7 @@ Unlike the original, Dead Reckoning will not be able to use the assets from vari
 
 In short, a single blanket of a celestial body's shadow can be observed carpetting the planet during solar eclipses, which, historically, are thought to symbolize major changes. Basically, the idea is that Duskwave Studios is a symbol of change, with its games contrasting against the many mediocre publishings of the modern gaming industry.
 
-## Concluding Thoughts
+### Concluding Thoughts
 
 I'm looking forward to watching the community grow as development inches towards full release. I hope I can build a game that we can all enjoy and that provides a modern, high-quality gaming experience. 
 
