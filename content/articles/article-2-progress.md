@@ -12,7 +12,7 @@ draft: false
 
 ## Introduction
 
-It's been a long time since the last article. In this post, I want to bring everyone up to speed with how development has been going and also introduce a new roadmap to visualize how the rest of the game's development will look leading up to release.
+It's been a long time since the last article. In this post, I want to bring everyone up to speed with how development has been going and explain how certain systems are being implemented in the game.
 
 ## Development Progress
 
@@ -68,8 +68,8 @@ It's also worth noting I spent about two weeks of that time playing the [Apogea]
 
 ## Conclusions and Discord Server Reminder
 
-The next article I publish will most likely be a roadmap that will be periodically updated and serve as a visual guide to the current status of game's development. This roadmap will be linked in the discord for future reference and will also be pinned on the blog's homepage.
+If you're wondering where you can get the most up to date information about this game, we have a community discord server that I post news announcements to. [You can join through this link](https://discord.gg/xcP27ZPbt2). **Please be aware that this is an 18+ discord server and minor persons are not permitted. Do not request to join the server if you are a minor.**
 
 In the future, I will be opening up a suggestions channel where server members can submit their feedback and suggestions to improve the game.
 
-If you're wondering where you can get the most up to date information about this game, we have a community discord server that I post news announcements to. [You can join through this link](https://discord.gg/xcP27ZPbt2). **Please be aware that this is an 18+ discord server and minor persons are not permitted. Do not request to join the server if you are a minor.**
+The next article I publish will most likely be a roadmap that will be periodically updated and serve as a visual guide to the current status of game's development. This roadmap will be linked in the discord for future reference and will also be pinned on the blog's homepage.
