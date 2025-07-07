@@ -1,0 +1,7 @@
+{{/* layouts/shortcodes/simplecenter.html */}}
+<figure class="simple-center">
+  {{ .Inner | markdownify }}
+  {{ with .Get "caption" }}
+    <figcaption class="simple-center__caption">{{ . }}</figcaption>
+  {{ end }}
+</figure>

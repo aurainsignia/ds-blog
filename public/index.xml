@@ -10,11 +10,11 @@
     <lastBuildDate>Thu, 03 Jul 2025 01:31:56 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ds-blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Starting Development &amp; Roadmap</title>
-      <link>http://localhost:1313/ds-blog/articles/article-2-roadmap/</link>
+      <title>Starting Development &amp; Progress</title>
+      <link>http://localhost:1313/ds-blog/articles/article-2-progress/</link>
       <pubDate>Thu, 03 Jul 2025 01:31:56 +0000</pubDate>
-      <guid>http://localhost:1313/ds-blog/articles/article-2-roadmap/</guid>
-      <description>Our first programs, the planned roadmap, and vibe coding, oh my!</description>
+      <guid>http://localhost:1313/ds-blog/articles/article-2-progress/</guid>
+      <description>Dead Reckoning&amp;rsquo;s first development steps.</description>
     </item>
     <item>
       <title>An Introduction To Dead Reckoning</title>

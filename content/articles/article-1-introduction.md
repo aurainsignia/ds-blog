@@ -25,9 +25,9 @@ In the future, you can expect posts to be shorter than this one. Additionally, I
 
 ## Introducing Duskwave Studios
 
+{{< simplecenter caption="I'll probably be cleaning up this logo at some point..." >}}
 ![logo](/images/logo.png)
-
-*I'll probably be cleaning up this logo at some point...*
+{{< /simplecenter >}}
 
 Duskwave Studios is the name of the organization and development team for my game, Dead Reckoning. It currently consists solely of myself. However, if enough interest in the game exists, I plan on opening the project up for collaboration with other developers and community members sometime in the future.
 
@@ -36,9 +36,9 @@ Additionally, there's an invite-only discord server where you can find more info
 ---
 ## A Successor to Zombie Survival: Dead Reckoning
 
+{{< simplecenter caption="I don't have a picture of what the game will look like yet. So, have a picture of this cat instead." >}}
 ![cat](/images/cat.jpg)
-
-*I don't have a picture of what the game will look like yet, so have a picture of this cat instead.*
+{{< /simplecenter >}}
 
 Dead Reckoning will be an FPS RPG based on the [Zombie Survival](https://github.com/JetBoom/zombiesurvival) gamemode from Garry's Mod 10 using Source 2 in [s&box](https://sbox.game/news/) and redesigned to include my own ideas. You can think of it as a spirital sucessor to that gamemode but under a different developer and a newer platform.
 
@@ -61,9 +61,9 @@ Additionally, I want the game to support all styles of play. In the original, yo
 ---
 ## The Development Timeline and Release Schedule
 
+{{< simplecenter caption="The woes of s&box development." >}}
 ![garrymoment](/images/garrymoment.png)
-
-*The woes of s&box development.*
+{{< /simplecenter >}}
 
 There will be two milestones of development: establishing a prototype and then the full release of the game. The prototype will be a skeleton version with only the essential basic systems implemented for internal testing, although I may open up a closed testing period to the community at some point for help and feedback. After the prototype has been tested and polished, I will move on to develop the full release version of the game, which will have all of the planned features fully implemented.
 
@@ -72,9 +72,9 @@ In a nutshell, this is going to be one of those "it takes as long as it takes" p
 ---
 ## Planned Features
 
+{{< simplecenter caption="A preview of the currently sparse project board." >}}
 ![youtrack](/images/youtrack-board.png)
-
-*A preview of the currently sparse project board.*
+{{< /simplecenter >}}
 
 Dead Reckoning is going to have all of the core features of the original game with additional features and systems added by myself, with some of the more mundane mechanics reworked. While I don't have any concept art available yet since it is still very early in development, I will be sharing early screenshots of features in development in following blog posts in the coming months, as well as elaborating on what each of them do. Many will be very similar or the same as their equivalent systems in Zombie Survival.
 ### Prototype's Features
@@ -134,12 +134,10 @@ Besides these features, the gamemode itself will need to be created. Many less-i
 ---
 ## About Me
 
-{{< youtube o3dFsUpNt5U >}}
-
-*Some footage of me playing [Midnight Zombie Survival](https://midnight.cat/) (low population)*
+{{< youtube "o3dFsUpNt5U" "Some footage of me playing [Midnight Zombie Survival](https://midnight.cat/) (low population)" >}}
 
 For those who don't know me, I am a long time player and fan of the original game, Zombie Survival hosted on NoxiousNet way back in the mid 2000's. I have over 10k hours spent playing ZS and spend most of my free time gaming. My development skills come from my education (computer science degree) and career working full time as a software developer (not in the gaming industry). This project is going to be my first time delving into game development though, and I plan on taking my time and doing it right.
-#### Development Motivations
+### Development Motivations
 As for why I'm making it, there are several reasons.
 
 1. The modern gaming industry is becoming shit and prioritizing capitalization over quality.
@@ -154,8 +152,8 @@ Developing the game myself fixes all of these issues and also satisfies a long-t
 Below are some other pieces of information that I couldn't find a good fit for in the other sections.
 #### Licensing Restrictons
 Unlike the original, Dead Reckoning will not be able to use the assets from various source games, including the main one, Half-Life 2. The original game had Half-Life 2 assets available for developers to use due to the unique licensing contract Valve has with Garry for Garry's Mod. However, S&box lacks that contract, so Dead Reckoning will need to have its assets sourced from other avenues. Whatever assets I end up using, I will try my best to keep them as similar as possible to the original ones used in Zombie Survival while still following the law.
-#### What is a "Duskwave"?
-In short, a single wave of "dusk" can be observed carpetting the planet during solar eclipses, which, historically, are thought to symbolize major changes  . Basically, the idea is that Duskwave Studios is a symbol of change, with its games contrasting against the many mediocre publishings of the modern gaming industry.
+#### What inspired the organization name?
+In short, a single blanket of a celestial body's shadow can be observed carpetting the planet during solar eclipses, which, historically, are thought to symbolize major changes. Basically, the idea is that Duskwave Studios is a symbol of change, with its games contrasting against the many mediocre publishings of the modern gaming industry.
 
 ---
 ## Final Notes

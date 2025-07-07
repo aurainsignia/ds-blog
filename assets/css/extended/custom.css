@@ -42,3 +42,65 @@
   margin: 1rem auto;
   object-fit: contain; /* preserves aspect without cropping */
 }
+
+/* center both image and caption in a column */
+.centered-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+}
+.centered-figure img {
+  /* optional: cap height to 50vh for responsiveness */
+  max-height: 75vh;
+  width: auto;
+  object-fit: contain;
+}
+.centered-caption {
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+  text-align: center;
+  font-style: italic;    /* add this */
+  font-weight: normal;    /* reset the bold */
+}
+figure.centered-figure figcaption.centered-caption {
+  font-weight: normal !important;
+}
+
+.simple-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+.simple-center__caption {
+  font-style: italic;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+  font-size: 0.85em;
+  font-weight: normal;
+}
+figure.simple-center figcaption.simple-center__caption {
+  font-weight: normal !important;
+}
+
+/* make the embedded video responsive */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect */
+}
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* strip out YouTube iframe borders/shadows in PaperMod */
+.video-container,
+.video-container iframe {
+  border: none !important;
+  box-shadow: none !important;
+}

@@ -1,9 +1,7 @@
 {{/* layouts/shortcodes/center.html */}}
-<div style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-  ">
+<figure class="centered-figure">
   {{ .Inner | markdownify }}
-</div>
+  {{ with $cap := .Get "caption" }}
+    <figcaption class="centered-caption">{{ $cap }}</figcaption>
+  {{ end }}
+</figure>

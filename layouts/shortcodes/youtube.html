@@ -1,0 +1,18 @@
+{{/* layouts/shortcodes/youtube.html */}}
+{{- "\n\n" -}}    {{/* two leading newlines */}}
+{{ $id := index .Params 0 }}
+{{ $cap := "" }}
+{{ if ge (len .Params) 2 }}{{ $cap = index .Params 1 }}{{ end }}
+
+<figure class="simple-center">
+  <div class="video-container">
+    <iframe … src="https://www.youtube-nocookie.com/embed/{{ $id }}" …></iframe>
+  </div>
+  {{ if $cap }}
+  <figcaption class="simple-center__caption">
+    {{ $cap | markdownify }}
+  </figcaption>
+  {{ end }}
+</figure>
+
+{{- "\n\n" -}}    {{/* two trailing newlines */}}
