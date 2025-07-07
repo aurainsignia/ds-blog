@@ -26,7 +26,9 @@ In general, learning C# style, features, and the s&box engine has been less stre
 ![Missing ](/images/article2/roundmanagerlogic.PNG)
 {{< /center >}}
 
-The only other interesting thing about making the Round Manager was probably making the state timer. I wanted to make sure that the timer was based off of the passing of ingame time on the server rather than real time. It's important to make sure the timer is in sync with the game server's state so server lag doesn't desync the timer and gamestate. This was implemented by taking desired timer duration and subtracting the time between server frames from it every frame. Implementing it this way, while not as simple as using a native system timer, allows the timer to stay in sync with the game as it naturally experiences computational hiccups.
+The only other interesting thing about making the Round Manager was probably making the state timer. I wanted to make sure that the timer was based off of the passing of ingame time on the server rather than real time. It's important to make sure the timer is in sync with the game server's state so untintentional desync interactions don't happen. 
+
+This was implemented by taking desired timer duration and subtracting the time between server frames from it every frame. Implementing it this way, while not as simple as using a native system timer, allows the timer to stay in sync with the game as it naturally experiences computational hiccups.
 
 {{< center caption="The state timer algorithm." >}}
 ![Missing ](/images/article2/statetimer.png)
@@ -34,7 +36,7 @@ The only other interesting thing about making the Round Manager was probably mak
 
 ### HUD Manager
 
-Once I started working on the HUD, I ran into my first real system design challenges: how do I transfer data between these systems and how do I enforce their initialization order? I need to get information from the round manager to draw onto the player's HUD, like the current wave and wave timer. But, I also need to make sure that the Round Manager is initialized *before* the HUD manager tries to grab data from it, or else we'll run into null pointer errors. I ended up solving this by reimplementing Round Manager as a singleton with a static reference.
+Once I started working on the HUD, I ran into my first real system design challenges: how do I transfer data between these systems and how do I enforce their initialization order? I need to get information from the round manager to draw onto the player's HUD, like the current wave and wave timer. But, I also need to make sure that the Round Manager is initialized *before* the HUD manager tries to grab data from it, or else we'll run into null pointer errors. I ended up solving this through a few steps, the first being reimplementing Round Manager as a singleton with a static reference.
 
 {{< center caption="The RoundManager singleton implementation." >}}
 ![Missing ](/images/article2/debugging%20singleton%20null%20ptr/image.png)
@@ -49,12 +51,13 @@ Scene
    └─ Components
 ```
 
-  **GameObjects** are data structures for objects in the scene and **Components** are behaviors and/or data that can be attached to them. **GameObjectSystems** are instantiated on your game's initialization and act as global singleton GameObjects. Since my implementation of `RoundManager` is a Component (needed for the `Component.Task.Frame` function), it needed to be attached to an object to be accessible. Once I understood these hierarchical patterns, I was able to properly implement HUDManager's access of the RoundManager's component data via attaching it to the game manager (a GameObjectSystem) and grabbing it as a globally visible field.
+  **GameObjects** are data structures for objects in the scene and **Components** are behaviors and/or data that can be attached to them. **GameObjectSystems** are instantiated on your game's initialization and act as global singleton GameObjects. 
+
+  Since my implementation of `RoundManager` is a component (needed for the `Component.Task.Frame` function and a few other reasons), it needs to be attached to something to be accessible. Once I understood the hierarchical patterns, I was able to properly implement getting the round manager data via attaching the `RoundManager` singleton component to the game manager (a GameObjectSystem) and accessing it as a globally visible field on the HUD manager.
 
 {{< center caption="Attaching the RoundManager component to the game's manager." >}}
 ![Missing ](/images/article2/debugging%20singleton%20null%20ptr/connectedcomponent.png)
 {{< /center >}}
-
 {{< center caption="RoundManager.Instance is now accessible by HUDManager, hoorah!" >}}
 ![Missing ](/images/article2/debugging%20singleton%20null%20ptr/image2.png)
 {{< /center >}}

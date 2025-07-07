@@ -139,7 +139,7 @@
   
 </figure>
 <h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
-<p>It&rsquo;s been a long time since the last article. In this post, I want to bring everyone up to speed with how development has been going and also introduce a new roadmap to visualize how the rest of the game&rsquo;s development will look leading up to release.</p>
+<p>It&rsquo;s been a long time since the last article. In this post, I want to bring everyone up to speed with how development has been going and explain how certain systems are being implemented in the game.</p>
 <h2 id="development-progress">Development Progress<a hidden class="anchor" aria-hidden="true" href="#development-progress">#</a></h2>
 <p>This section will be somewhat technical. In summary, the core gameplay loop has been finished and I&rsquo;m now focusing on finishing the player HUD systems. Though, I am a bit unsatisfied with the current speed of development. Those uninterested in the process details may continue to <a href="#development-reflections-so-far">→ Development Reflections So Far</a>.</p>
 <h3 id="round-manager">Round Manager<a hidden class="anchor" aria-hidden="true" href="#round-manager">#</a></h3>
@@ -151,7 +151,8 @@
     <figcaption class="centered-caption">A snippet of code logic showing off the state machine of the Round Manager component.</figcaption>
   
 </figure>
-<p>The only other interesting thing about making the Round Manager was probably making the state timer. I wanted to make sure that the timer was based off of the passing of ingame time on the server rather than real time. It&rsquo;s important to make sure the timer is in sync with the game server&rsquo;s state so server lag doesn&rsquo;t desync the timer and gamestate. This was implemented by taking desired timer duration and subtracting the time between server frames from it every frame. Implementing it this way, while not as simple as using a native system timer, allows the timer to stay in sync with the game as it naturally experiences computational hiccups.</p>
+<p>The only other interesting thing about making the Round Manager was probably making the state timer. I wanted to make sure that the timer was based off of the passing of ingame time on the server rather than real time. It&rsquo;s important to make sure the timer is in sync with the game server&rsquo;s state so untintentional desync interactions don&rsquo;t happen.</p>
+<p>This was implemented by taking desired timer duration and subtracting the time between server frames from it every frame. Implementing it this way, while not as simple as using a native system timer, allows the timer to stay in sync with the game as it naturally experiences computational hiccups.</p>
 
 <figure class="centered-figure">
   <img alt="Missing " loading="lazy" src="http://localhost:1313/ds-blog/images/article2/statetimer.png">
@@ -160,7 +161,7 @@
   
 </figure>
 <h3 id="hud-manager">HUD Manager<a hidden class="anchor" aria-hidden="true" href="#hud-manager">#</a></h3>
-<p>Once I started working on the HUD, I ran into my first real system design challenges: how do I transfer data between these systems and how do I enforce their initialization order? I need to get information from the round manager to draw onto the player&rsquo;s HUD, like the current wave and wave timer. But, I also need to make sure that the Round Manager is initialized <em>before</em> the HUD manager tries to grab data from it, or else we&rsquo;ll run into null pointer errors. I ended up solving this by reimplementing Round Manager as a singleton with a static reference.</p>
+<p>Once I started working on the HUD, I ran into my first real system design challenges: how do I transfer data between these systems and how do I enforce their initialization order? I need to get information from the round manager to draw onto the player&rsquo;s HUD, like the current wave and wave timer. But, I also need to make sure that the Round Manager is initialized <em>before</em> the HUD manager tries to grab data from it, or else we&rsquo;ll run into null pointer errors. I ended up solving this through a few steps, the first being reimplementing Round Manager as a singleton with a static reference.</p>
 
 <figure class="centered-figure">
   <img alt="Missing " loading="lazy" src="http://localhost:1313/ds-blog/images/article2/debugging%20singleton%20null%20ptr/image.png">
@@ -173,12 +174,13 @@
 ├─ GameObjectSystems (global singletons)
 └─ GameObjects
    └─ Components
-</code></pre><p><strong>GameObjects</strong> are data structures for objects in the scene and <strong>Components</strong> are behaviors and/or data that can be attached to them. <strong>GameObjectSystems</strong> are instantiated on your game&rsquo;s initialization and act as global singleton GameObjects. Since my implementation of <code>RoundManager</code> is a Component (needed for the <code>Component.Task.Frame</code> function), it needed to be attached to an object to be accessible. Once I understood these hierarchical patterns, I was able to properly implement HUDManager&rsquo;s access of the RoundManager&rsquo;s component data via attaching it to the game&rsquo;s highest GameObjectSystem and grabbing it as a globally visible field.</p>
-
+</code></pre><p><strong>GameObjects</strong> are data structures for objects in the scene and <strong>Components</strong> are behaviors and/or data that can be attached to them. <strong>GameObjectSystems</strong> are instantiated on your game&rsquo;s initialization and act as global singleton GameObjects.</p>
+<p>Since my implementation of <code>RoundManager</code> is a component (needed for the <code>Component.Task.Frame</code> function and a few other reasons), it needs to be attached to something to be accessible. Once I understood the hierarchical patterns, I was able to properly implement getting the round manager data via attaching the <code>RoundManager</code> singleton component to the game manager (a GameObjectSystem) and accessing it as a globally visible field on the HUD manager.</p>
+<p>
 <figure class="centered-figure">
   <img alt="Missing " loading="lazy" src="http://localhost:1313/ds-blog/images/article2/debugging%20singleton%20null%20ptr/connectedcomponent.png">
   
-    <figcaption class="centered-caption">Attaching the RoundManager component to the game&#39;s manager and highest GameObjectSystem.</figcaption>
+    <figcaption class="centered-caption">Attaching the RoundManager component to the game&#39;s manager.</figcaption>
   
 </figure>
 
@@ -187,14 +189,15 @@
   
     <figcaption class="centered-caption">RoundManager.Instance is now accessible by HUDManager, hoorah!</figcaption>
   
-</figure>
+</figure></p>
+<p>That is about it as far as current progress goes. Once I finish implementing the supporting HUD systems I will move onto designing the HUD itself.</p>
 <h3 id="development-reflections-so-far">Development Reflections So Far<a hidden class="anchor" aria-hidden="true" href="#development-reflections-so-far">#</a></h3>
 <p>I&rsquo;ve had about two months of development time now and I still haven&rsquo;t really covered much ground yet. The main reason is because I&rsquo;ve spent a large portion of that time learning about the new tools and technologies that I&rsquo;m working with. Hopefully as I become more familiar with them, my productivity should also increase correspondingly.</p>
 <p>It&rsquo;s also worth noting I spent about two weeks of that time playing the <a href="https://www.apogea.online/">Apogea</a> playtest. I am not affiliated with them in any way, but I had a lot of fun and highly recommend it for anyone looking for a hardcore MMORPG experience that isn&rsquo;t modern profit-driven slop.</p>
 <h2 id="conclusions-and-discord-server-reminder">Conclusions and Discord Server Reminder<a hidden class="anchor" aria-hidden="true" href="#conclusions-and-discord-server-reminder">#</a></h2>
-<p>The next article I publish will most likely be a roadmap that will be periodically updated and serve as a visual guide to the current status of game&rsquo;s development. This roadmap will be linked in the discord for future reference and will also be pinned on the blog&rsquo;s homepage.</p>
-<p>In the future, I will be opening up a suggestions channel where server members can submit their feedback and suggestions to improve the game.</p>
 <p>If you&rsquo;re wondering where you can get the most up to date information about this game, we have a community discord server that I post news announcements to. <a href="https://discord.gg/xcP27ZPbt2">You can join through this link</a>. <strong>Please be aware that this is an 18+ discord server and minor persons are not permitted. Do not request to join the server if you are a minor.</strong></p>
+<p>In the future, I will be opening up a suggestions channel where server members can submit their feedback and suggestions to improve the game.</p>
+<p>The next article I publish will most likely be a roadmap that will be periodically updated and serve as a visual guide to the current status of game&rsquo;s development. This roadmap will be linked in the discord for future reference and will also be pinned on the blog&rsquo;s homepage.</p>
 
 
   </div>
