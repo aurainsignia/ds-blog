@@ -51,7 +51,7 @@ Scene
 
   **GameObjects** are data structures for objects in the scene and **Components** are behaviors and/or data that can be attached to them. **GameObjectSystems** are instantiated on your game's initialization and act as global singleton GameObjects. Since my implementation of `RoundManager` is a Component (needed for the `Component.Task.Frame` function), it needed to be attached to an object to be accessible. Once I understood these hierarchical patterns, I was able to properly implement HUDManager's access of the RoundManager's component data via attaching it to the game manager (a GameObjectSystem) and grabbing it as a globally visible field.
 
-{{< center caption="Attaching the RoundManager component to the game's manager and highest GameObjectSystem." >}}
+{{< center caption="Attaching the RoundManager component to the game's manager." >}}
 ![Missing ](/images/article2/debugging%20singleton%20null%20ptr/connectedcomponent.png)
 {{< /center >}}
 
